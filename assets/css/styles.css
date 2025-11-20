@@ -1,0 +1,114 @@
+/* ================================
+   Global Reset + Apple Typography
+=================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", 
+               "SF Pro Display", "SF Pro Text", Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #1a1a1a;
+}
+
+/* ================================
+   Container Styling
+=================================== */
+.container {
+  background: #ffffff;
+  width: 380px;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* ================================
+   Typography
+=================================== */
+.container h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0d0d0d;
+}
+
+.container p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  color: #3a3a3a;
+}
+
+/* ================================
+   Inputs
+=================================== */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid #007aff;
+  box-shadow: 0 0 0 3px rgba(0,122,255,0.25);
+}
+
+/* Side-by-side height inputs */
+.container input:nth-of-type(2),
+.container input:nth-of-type(3) {
+  width: 48%;
+  display: inline-block;
+}
+
+/* ================================
+   Button
+=================================== */
+button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 14px;
+  background: #007aff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+button:hover {
+  background: #0063d6;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ================================
+   Result Box
+=================================== */
+#result {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f2f2f7;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  border: 1px solid #e5e5ea;
+}
